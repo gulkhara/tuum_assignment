@@ -1,13 +1,15 @@
 # tuum_assignment
 
-Tests are written in JAVA using Cucumber, JUnit frameworks. The following endpoints have been included in the scope of API testing:
+The tech stack used in writing the automated tests include JAVA, Cucumber, JUnit, RestAssured, Gson, and Allure. 
+The following endpoints have been included in the scope of API testing:
 
 - Create Account: /api/v4/persons/{customerId}/accounts
 - Get Balances: /api/v1/accounts/{accountId}/balances
 - Create Transactions: /api/v5/accounts/{accountId}/transactions 
 
 Below is the short summary of scenarios covering both positive and negative test cases for each endpoint, and details of each scenario 
-can be found in the respective feature file e.g. /src/test/resources/features/createAccount.feature.
+can be found in the respective feature file e.g. /src/test/resources/features/createAccount.feature. In addition, the actual API request calls 
+and response assertions can be found under src/test/java/tuumAutomation/stepDefinitions/StepDefinitions.java.
 
 Scenario 1: Create Account
 - Create account with valid data
