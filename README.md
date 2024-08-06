@@ -1,25 +1,24 @@
 # tuum_assignment
 
-Automated API tests
-Tests are written in JAVA using Cucumber, JUnit frameworks and Allure reporting tool. The following endpoints have been included in the scope of API testing:
+Tests are written in JAVA using Cucumber, JUnit frameworks. The following endpoints have been included in the scope of API testing:
 
 - Create Account: /api/v4/persons/{customerId}/accounts
 - Get Balances: /api/v1/accounts/{accountId}/balances
 - Create Transactions: /api/v5/accounts/{accountId}/transactions 
 
-For each endpoint, positive and negative scenarios have been covered and the short summary of the tests is as following, and details of each scenario can be found
-in the respective feature file e.g. /src/test/resources/features/createAccount.feature.
+Below is the short summary of scenarios covering both positive and negative test cases for each endpoint, and details of each scenario 
+can be found in the respective feature file e.g. /src/test/resources/features/createAccount.feature.
 
-Feature 1: Create Account
+Scenario 1: Create Account
 - Create account with valid data
 - Create account with missing required fields
 - Create account with invalid data
 
-Feature 2: Get Balances
+Scenario 2: Get Balances
 - Get balances for an existing account
 - Get balances for a non-existing account
 
-Feature 3: Create Transactions
+Scenario 3: Create Transactions
 - Create transaction with valid data
 - Create transaction with invalid data
 - Create transaction for a non-existent account
